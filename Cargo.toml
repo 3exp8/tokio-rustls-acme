@@ -29,7 +29,7 @@ rustls = "0.21"
 
 tokio = { version = "1.20.1", default-features = false }
 tokio-rustls = { version = "0.24" }
-reqwest = { version = "0.11.19", default-features = false, features = ["rustls-tls"] }
+reqwest = { git = "https://github.com/3exp8/reqwest.git", branch = "master" , default-features = false, features = ["rustls-tls"] }
 
 # Axum
 axum-server = { version = "0.6", features = ["tls-rustls"], optional = true }
